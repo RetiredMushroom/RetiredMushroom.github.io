@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(255, 97, 97);
+    font-family: 'Doom 2016 Left', sans-serif;
+    font-size: 1.5em;
+}
+h1{
+    color:rgb(253, 255, 249);
+    font-weight: normal;
+    font-size: 5em;
+    margin: 0;
+}
+#righth1{
+    font-family: 'Doom 2016 Right', sans-serif;
+}
+#h3a{
+    color:rgb(253, 255, 249);
+    font-weight: normal;
+    font-size: 2em;
+}
+.form1{
+    color:rgb(253, 255, 249);
+    background-color: rgb(216, 83, 83);
+}
