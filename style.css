@@ -14,6 +14,18 @@ h1{
     font-family: 'Doom 2016 Left', sans-serif;
     margin:auto;
     white-space: nowrap;
+    text-shadow:1px 1px 1px #919191,
+                2px 2px 1px #919191,
+                3px 3px 1px #919191,
+                4px 4px 1px #919191,
+                5px 5px 1px #919191,
+                6px 6px 1px #919191,
+                7px 7px 1px #919191,
+                8px 8px 1px #919191,
+                9px 9px 1px #919191,
+                10px 10px 1px #919191,
+                12px 12px 10px rgba(16,16,16,0.4),
+                14px 14px 15px rgba(16,16,16,0.2);
 
 }
 #righth1{
