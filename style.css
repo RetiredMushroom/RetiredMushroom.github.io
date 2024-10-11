@@ -54,7 +54,7 @@ h1{
 }
 @media screen and (max-width: 840px) {
     h1{
-        font-size: 5em;
+        font-size: 6em;
     }
 }
 
@@ -83,30 +83,33 @@ h1{
 #revspace{
     width:250px;
     height:1000px;
-    position: absolute;
-    right: -150px;
+    float:right;
+    right: -100px;
     background-color: rgb(38, 40, 49);
+    overflow: clip;
 
 }
-
-#rev{
+#revdiv{
+    position: fixed;
+    height:250px;
+    width:250px;
+    right: -140px;  
     #revspace:hover & {
         transform: translateX(-110px);
     }
     transition: all 0.25s ease-in-out;
 }
 
-#revchamber{
+#rev{
     position: absolute;
-    top:5px;
+
 }
 #revcimg{
-    height: 180px;
     position: absolute;
-    top: 30px;
-    left:35px;
+    height: 180px;
+    top:35px;
+    right: 35px;
 }
-
 
 #righth1{
     font-family: 'Doom 2016 Right', sans-serif;
@@ -116,8 +119,4 @@ h1{
     font-weight: normal;
     text-align: center;
     font-size: 2em;
-}
-.form1{
-    color:rgb(253, 255, 249);
-    background-color: rgb(255, 97, 97);
 }
