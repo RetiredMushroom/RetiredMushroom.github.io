@@ -1,9 +1,18 @@
-body{
-    background-color: crimson;
-    font-family: 'Doom 2016 Left', sans-serif;
-    font-size: 1.5em;
+*{
+    box-sizing: border-box;
 }
+body{
+    background-color: rgb(38, 40, 49);
+    font-size: 1em;
+    font-family: verdana;
+    margin: 0;
+}
+main{
+    margin: 20px;
+}
+
 h1{
+    background-color: crimson;
     color:white;
     font-weight: normal;
     font-size: 10em;
@@ -28,15 +37,87 @@ h1{
                 14px 14px 15px rgba(16,16,16,0.2);
 
 }
+
+@keyframes popOut {
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translate(-120px);
+    }
+}
+
+@media screen and (min-width: 841px) {
+    h1{
+        font-size: 10em;
+    }
+}
+@media screen and (max-width: 840px) {
+    h1{
+        font-size: 5em;
+    }
+}
+
+.navbar ul{
+    list-style-type: none;
+    background-color: crimson;
+    overflow: hidden;
+    padding: 0%;
+    
+}
+.navbar a{
+    color:white;
+    text-decoration: none;
+}
+.navbar li{
+    width: 100px;
+    text-align: center;
+    float: left;
+}
+.navbar li:hover{
+    background-color: rgb(167, 15, 46);
+    transition-timing-function: ease-in;
+    transition: background-color 0.2s;
+}
+
+#revspace{
+    width:250px;
+    height:1000px;
+    position: absolute;
+    right: -150px;
+    background-color: rgb(38, 40, 49);
+
+}
+
+#rev{
+    #revspace:hover & {
+        transform: translateX(-110px);
+    }
+    transition: all 0.25s ease-in-out;
+}
+
+#revchamber{
+    position: absolute;
+    top:5px;
+}
+#revcimg{
+    height: 180px;
+    position: absolute;
+    top: 30px;
+    left:35px;
+}
+
+
 #righth1{
     font-family: 'Doom 2016 Right', sans-serif;
 }
 #h3a{
     color:rgb(253, 255, 249);
     font-weight: normal;
+    text-align: center;
     font-size: 2em;
 }
 .form1{
     color:rgb(253, 255, 249);
-    background-color: rgb(216, 83, 83);
+    background-color: rgb(255, 97, 97);
 }
