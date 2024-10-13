@@ -2,36 +2,48 @@
 <html>
     <head>
         <title>RetiredMushroom</title>
-        <link rel="icon" type="images/png" href="RM.png">
+        <link rel="icon" type="images/png" href="images/RM.png">
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.cdnfonts.com/css/doom-2016-left" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     </head>
-    <body>
-        <audio id="audiorev-in-out" src="revchamber-in-out.mp3"></audio>
-        <audio id="audiorevspin" src="revchamberspin.mp3"></audio>
+    <header>
         <div>
-        <h1 id="h1a">Reti<span id="righth1">reD</span>Mush<span id="righth1">rooM</span></h1>
+            <h1 id="h1a">Reti<span id="righth1">reD</span>Mush<span id="righth1">rooM</span></h1>
         </div>
         <hr>
 
         <nav class="navbar">
             <ul>
-                <li id="home_btn"><a href="#h1a">Home</a></li>
-                <li id="proj_btn"><a href="">Projects</a></li>
-                <li id="about_btn"><a href="">About</a></li>
+                <li id="curr_btn"><a href="#h1a">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="">About</a></li>
             </ul>
         </nav>
+    </header>
+    <body>
+        <div id="main">
+            <audio id="audiorev-in-out" src="audios/revchamber-in-out.mp3"></audio>
+            <audio id="audiocspin" src="audios/revchamberspin.mp3"></audio>
 
-        <div id="revspace">
-            <div id="revdiv">
-            <img id ="rev" src="rev.png">
-                <img id="revcimg"src="revchamber.png">
+            <div id="revspace">
+                <div id="revdiv">
+                <img id ="rev" src="images/rev.png">
+                    <img id="revcimg"src="images/revchamber.png">
+                </div>
             </div>
-        </div>
-        <div>
-            <form>
-                <input id="code" type="text">
-            </form>
+            
+            <div id="welcome">
+            <p>Welcome to the website, use the revolver to change pages</p>
+            </div>
+
+            <div>
+                <form>
+                    <input id="code" type="text">
+                </form>
+            </div>
         </div>
         <script type="text/javascript"src="main.js"></script>
     </body>
