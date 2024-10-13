@@ -1,16 +1,25 @@
 *{
     box-sizing: border-box;
 }
+body::-webkit-scrollbar {
+    display: none;
+  }
 body{
     background-color: rgb(38, 40, 49);
     font-size: 1em;
     font-weight: bold;
-    font-family: verdana;
-    margin: 0;
+    font-family: 'Quicksand';
+    color: white;
+    margin: 0px;
     height: 3000px;
 }
-main{
-    margin: 20px;
+#main{
+    margin:2%;
+}
+
+
+hr{
+    border: 2px solid crimson;
 }
 
 h1{
@@ -20,8 +29,6 @@ h1{
     font-size: 10em;
     margin: 0;
     text-align: center;
-    border: 4px solid;
-    border-radius: 4px;
     font-family: 'Doom 2016 Left', sans-serif;
     margin:auto;
     white-space: nowrap;
@@ -40,6 +47,25 @@ h1{
 
 }
 
+h2{
+    padding: 0;
+    margin: 0;
+}
+
+#h2a{
+    font-family:'Quicksand';
+    width: 80%;
+    font-size: 200%;
+    color: white;
+    padding-left:2%;
+    display: inline-block;
+    text-align: center;
+}
+
+#welcome{
+    font-size: 1.5em;
+}
+
 @keyframes popOut {
     from{
         transform: translateX(0px);
@@ -49,22 +75,24 @@ h1{
     }
 }
 
-@media screen and (min-width: 841px) {
+@media screen and (min-width: 976px) {
     h1{
         font-size: 10em;
     }
 }
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 975px) {
     h1{
-        font-size: 6em;
+        font-size: 5.9em;
     }
 }
+
 
 .navbar ul{
     list-style-type: none;
     background-color: crimson;
     overflow: hidden;
     padding: 0%;
+    margin: 0;
     
 }
 .navbar a{
@@ -74,6 +102,7 @@ h1{
 .navbar li{
     width: 100px;
     text-align: center;
+    padding: 10px;
     float: left;
 }
 .navbar li:hover{
@@ -81,36 +110,34 @@ h1{
     transition-timing-function: ease-in;
     transition: background-color 0.2s;
 }
-#home_btn{
+#curr_btn{
     background-color: rgb(38, 40, 49);
-    border-top: 2px solid rgb(167, 15, 46);
+    border-top: 2px solid crimson;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
+
 #revspace{
-    width:250px;
-    height:1000px;
+    width:20%;
+    height:250px;
     float:right;
     right: -100px;
     background-color: rgb(38, 40, 49);
     overflow: clip;
-
 }
 #revdiv{
     position: fixed;
     height:250px;
     width:250px;
-    right: -140px;  
+    right: -150px;  
     #revspace:hover & {
         transform: translateX(-110px);
     }
     transition: all 0.25s ease-in-out;
 }
-
 #rev{
     position: absolute;
-
 }
 #revcimg{
     position: absolute;
@@ -119,6 +146,7 @@ h1{
     right: 25px;
     transition: all 0.1s ease-in-out
 }
+
 
 #righth1{
     font-family: 'Doom 2016 Right', sans-serif;
@@ -135,4 +163,53 @@ h1{
     border: 2px solid crimson;
     border-radius: 10px;
     float: bottom;
+}
+
+
+#bookspace{
+
+    position: relative;
+    top: 200px;
+    right: -150px;
+    height: 250px;
+    width: 20%;
+    float: right;
+    
+}
+#bookdiv{
+    background-color: rgb(110, 61, 33);
+    position: relative;
+    top: 25px;
+    left: 50px;
+    height:200px;
+    width:200px;
+    border: 10px solid rgb(173, 97, 52);
+    border-radius: 10px;
+    #bookspace:hover & {
+        transform: translateX(-110px);
+    }
+    transition: all 0.25s ease-in-out;
+}
+#blender{
+    background: linear-gradient(90deg, rgb(138, 71, 9) 0%, rgb(255, 118, 27) 15%, rgb(255, 118, 27) 85%, rgb(138, 71, 9) 100%);
+    position: relative;
+}
+.book{
+    width: 24%;
+    height: 48%;
+    margin: 1%;
+}
+.book:hover{
+    border: 2px solid white;
+    border-radius: 2px;
+}
+#python{
+    background: linear-gradient(90deg, rgb(42, 80, 110) 0%, rgb(69, 132, 182) 15%, rgb(69, 132, 182) 85%, rgb(42, 80, 110) 100%);
+    position: relative;
+}
+#c{
+    background: linear-gradient(90deg, rgb(33, 41, 97) 0%, rgb(57, 73, 171) 15%, rgb(57, 73, 171) 85%, rgb(33, 41, 97) 100%);
+    left: 25%;
+    bottom: 98%;
+    position: relative;
 }
